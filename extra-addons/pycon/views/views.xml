@@ -45,6 +45,7 @@
             <field name="name"/>
             <field name="capacity"/>
             <field name="presentations"/>
+            <field name="nbr_presentations"/>
           </group>
         </form>
       </field>
@@ -56,6 +57,7 @@
         <tree string="Rooms">
             <field name="name"/>
             <field name="capacity"/>
+            <field name="nbr_presentations"/>
         </tree>
       </field>
     </record>
