@@ -1,0 +1,167 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* pycon
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0-20190816\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-29 13:54+0000\n"
+"PO-Revision-Date: 2019-10-29 13:54+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: pycon
+#: model:ir.model.fields,field_description:pycon.field_pycon_presentation__max_attendees
+#: model:ir.model.fields,field_description:pycon.field_pycon_room__capacity
+msgid "Capacity"
+msgstr "Capacité"
+
+#. module: pycon
+#: model:ir.model.fields,field_description:pycon.field_pycon_presentation__create_uid
+#: model:ir.model.fields,field_description:pycon.field_pycon_room__create_uid
+#: model:ir.model.fields,field_description:pycon.field_pycon_speaker__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: pycon
+#: model:ir.model.fields,field_description:pycon.field_pycon_presentation__create_date
+#: model:ir.model.fields,field_description:pycon.field_pycon_room__create_date
+#: model:ir.model.fields,field_description:pycon.field_pycon_speaker__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: pycon
+#: model:ir.model.fields,field_description:pycon.field_pycon_presentation__date
+msgid "Date"
+msgstr "Date "
+
+#. module: pycon
+#: model:ir.model.fields,field_description:pycon.field_pycon_presentation__display_name
+#: model:ir.model.fields,field_description:pycon.field_pycon_room__display_name
+#: model:ir.model.fields,field_description:pycon.field_pycon_speaker__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: pycon
+#: model:ir.model.fields,field_description:pycon.field_pycon_presentation__id
+#: model:ir.model.fields,field_description:pycon.field_pycon_room__id
+#: model:ir.model.fields,field_description:pycon.field_pycon_speaker__id
+msgid "ID"
+msgstr ""
+
+#. module: pycon
+#: model:ir.model.fields,field_description:pycon.field_pycon_presentation____last_update
+#: model:ir.model.fields,field_description:pycon.field_pycon_room____last_update
+#: model:ir.model.fields,field_description:pycon.field_pycon_speaker____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: pycon
+#: model:ir.model.fields,field_description:pycon.field_pycon_presentation__write_uid
+#: model:ir.model.fields,field_description:pycon.field_pycon_room__write_uid
+#: model:ir.model.fields,field_description:pycon.field_pycon_speaker__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: pycon
+#: model:ir.model.fields,field_description:pycon.field_pycon_presentation__write_date
+#: model:ir.model.fields,field_description:pycon.field_pycon_room__write_date
+#: model:ir.model.fields,field_description:pycon.field_pycon_speaker__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: pycon
+#: model:ir.model.fields,field_description:pycon.field_pycon_presentation__name
+#: model:ir.model.fields,field_description:pycon.field_pycon_room__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: pycon
+#: model:ir.model.fields,field_description:pycon.field_pycon_room__nbr_presentations
+msgid "Nbr Presentations"
+msgstr "Nbr de Présentations"
+
+#. module: pycon
+#: model:ir.actions.act_window,name:pycon.action_pycon_presentation_form
+msgid "Presentation"
+msgstr ""
+
+#. module: pycon
+#: model:ir.model.fields,field_description:pycon.field_pycon_room__presentations
+#: model:ir.ui.menu,name:pycon.menu_pycon_presentation
+#: model_terms:ir.ui.view,arch_db:pycon.pycon_presentation_form
+#: model_terms:ir.ui.view,arch_db:pycon.pycon_presentation_tree
+msgid "Presentations"
+msgstr "Présentation"
+
+#. module: pycon
+#: model:res.groups,name:pycon.group_pycon_manager
+msgid "Pycon Manager"
+msgstr ""
+
+#. module: pycon
+#: model:ir.model,name:pycon.model_pycon_presentation
+msgid "Pycon Presentations"
+msgstr ""
+
+#. module: pycon
+#: model:ir.model,name:pycon.model_pycon_speaker
+msgid "Pycon speakers"
+msgstr ""
+
+#. module: pycon
+#: model:ir.model.fields,field_description:pycon.field_pycon_presentation__room
+#: model_terms:ir.ui.view,arch_db:pycon.pycon_room_form
+msgid "Room"
+msgstr "Salle"
+
+#. module: pycon
+#: model:ir.actions.act_window,name:pycon.action_pycon_room_form
+#: model:ir.ui.menu,name:pycon.menu_pycon_room_form
+#: model_terms:ir.ui.view,arch_db:pycon.pycon_room_tree
+msgid "Rooms"
+msgstr "Salles"
+
+#. module: pycon
+#: model_terms:ir.ui.view,arch_db:pycon.pycon_speaker_form
+msgid "Speaker"
+msgstr ""
+
+#. module: pycon
+#: model:ir.model.fields,field_description:pycon.field_pycon_speaker__name
+msgid "Speaker Name"
+msgstr ""
+
+#. module: pycon
+#: model:ir.actions.act_window,name:pycon.action_pycon_speaker_form
+#: model:ir.model.fields,field_description:pycon.field_pycon_presentation__speakers
+#: model:ir.ui.menu,name:pycon.menu_pycon_speaker_form
+#: model_terms:ir.ui.view,arch_db:pycon.pycon_speaker_tree
+msgid "Speakers"
+msgstr ""
+
+#. module: pycon
+#: sql_constraint:pycon.presentation:0
+msgid "This value already exists !"
+msgstr ""
+
+#. module: pycon
+#: model:ir.ui.menu,name:pycon.menu_pycon_presentation_form
+msgid "presentations"
+msgstr "Présentation"
+
+#. module: pycon
+#: model:ir.ui.menu,name:pycon.menu_pycon
+msgid "pycon"
+msgstr ""
+
+#. module: pycon
+#: model:ir.model,name:pycon.model_pycon_room
+msgid "pycon.room"
+msgstr ""
+
