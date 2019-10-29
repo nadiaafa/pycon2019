@@ -9,6 +9,7 @@
           <group>
             <field name="name"/>
             <field name="date"/>
+            <field name="room"/>
           </group>
         </form>
       </field>
@@ -31,9 +32,41 @@
       <field name="view_mode">tree,form</field>
     </record>
 
+    <!-- room-->
+    <record id="pycon_room_form" model="ir.ui.view">
+      <field name="name">pycon.room.form</field>
+      <field name="model">pycon.room</field>
+      <field name="arch" type="xml">
+        <form string="Room">
+          <group>
+            <field name="name"/>
+          </group>
+        </form>
+      </field>
+    </record>
+    <record id="pycon_room_tree" model="ir.ui.view">
+      <field name="name">pycon.room.tree</field>
+      <field name="model">pycon.room</field>
+      <field name="arch" type="xml">
+        <tree string="Rooms">
+            <field name="name"/>
+        </tree>
+      </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_pycon_room_form">
+      <field name="name">Rooms</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">pycon.room</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
     <!-- Presentation menus-->
     <menuitem name="pycon" id="menu_pycon" groups="base.group_system"/>
     <menuitem name="Presentations" parent="menu_pycon" id="menu_pycon_presentation"/>
     <menuitem name="presentations" parent="menu_pycon_presentation" id="menu_pycon_presentation_form" action="action_pycon_presentation_form" />
+
+    <!-- room menus-->
+    <menuitem name="Rooms" parent="menu_pycon_presentation" id="menu_pycon_room_form" action="action_pycon_room_form" groups="base.group_system"/>
   </data>
 </odoo>
