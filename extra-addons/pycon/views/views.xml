@@ -99,7 +99,7 @@
   </record>
 
     <!-- Presentation menus-->
-    <menuitem name="pycon" id="menu_pycon" groups="base.group_system"/>
+    <menuitem name="pycon" id="menu_pycon"/>
     <menuitem name="Presentations" parent="menu_pycon" id="menu_pycon_presentation"/>
     <menuitem name="presentations" parent="menu_pycon_presentation" id="menu_pycon_presentation_form" action="action_pycon_presentation_form" />
     <!-- room menus-->

@@ -1,2 +1,5 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_/mnt/extra-addons/pycon_/mnt/extra-addons/pycon,/mnt/extra-addons/pycon./mnt/extra-addons/pycon,model_/mnt/extra-addons/pycon_/mnt/extra-addons/pycon,,1,0,0,0
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+access_pycon_presentation,pycon.presentation.manager,pycon.model_pycon_presentation,group_pycon_manager,1,1,1,1
+access_pycon_room,pycon.room.manager,pycon.model_pycon_room,group_pycon_manager,1,1,1,1
+access_pycon_speakers,pycon.speakers.manager,pycon.model_pycon_speaker,group_pycon_manager,1,1,1,1
+
