@@ -10,6 +10,7 @@
             <field name="name"/>
             <field name="date"/>
             <field name="room"/>
+            <field name="max_attendees"/>
             <field name="speakers"/>
           </group>
         </form>
@@ -22,6 +23,7 @@
         <tree string="Presentations">
             <field name="name"/>
             <field name="date"/>
+            <field name="max_attendees"/>
         </tree>
       </field>
     </record>
@@ -41,6 +43,7 @@
         <form string="Room">
           <group>
             <field name="name"/>
+            <field name="capacity"/>
             <field name="presentations"/>
           </group>
         </form>
@@ -52,6 +55,7 @@
       <field name="arch" type="xml">
         <tree string="Rooms">
             <field name="name"/>
+            <field name="capacity"/>
         </tree>
       </field>
     </record>

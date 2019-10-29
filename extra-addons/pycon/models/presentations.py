@@ -10,4 +10,4 @@ class PyconPresentation(models.Model):
 	date = fields.Datetime()
 	room = fields.Many2one('pycon.room') 
 	speakers = fields.Many2many("pycon.speaker", string='Speakers')
-
+	max_attendees = fields.Integer(related='room.capacity')
