@@ -14,7 +14,7 @@ services:
     ports:
       - "8099:8069"
     tty: true
-    # command: -u pycon -d pycon
+    command: -u pycon -d pycon
     # command: odoo scaffold /mnt/extra-addons/pycon
     volumes:
       - ./extra-addons:/mnt/extra-addons
