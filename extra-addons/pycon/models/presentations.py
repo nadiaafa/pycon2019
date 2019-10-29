@@ -9,4 +9,5 @@ class PyconPresentation(models.Model):
 	name = fields.Char(string='Name', required=True)
 	date = fields.Datetime()
 	room = fields.Many2one('pycon.room') 
+	speakers = fields.Many2many("pycon.speaker", string='Speakers')
 

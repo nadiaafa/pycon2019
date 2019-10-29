@@ -10,6 +10,7 @@
             <field name="name"/>
             <field name="date"/>
             <field name="room"/>
+            <field name="speakers"/>
           </group>
         </form>
       </field>
@@ -62,12 +63,43 @@
       <field name="view_mode">tree,form</field>
     </record>
 
+    <!-- speakers-->
+  <record id="pycon_speaker_form" model="ir.ui.view">
+    <field name="name">pycon.speaker.form</field>
+    <field name="model">pycon.speaker</field>
+    <field name="arch" type="xml">
+      <form string="Speaker">
+        <group>
+          <field name="name"/>
+        </group>
+      </form>
+    </field>
+  </record>
+  <record id="pycon_speaker_tree" model="ir.ui.view">
+    <field name="name">pycon.speaker.tree</field>
+    <field name="model">pycon.speaker</field>
+    <field name="arch" type="xml">
+      <tree string="Speakers">
+          <field name="name"/>
+      </tree>
+    </field>
+  </record>
+  <record model="ir.actions.act_window" id="action_pycon_speaker_form">
+    <field name="name">Speakers</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">pycon.speaker</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
     <!-- Presentation menus-->
     <menuitem name="pycon" id="menu_pycon" groups="base.group_system"/>
     <menuitem name="Presentations" parent="menu_pycon" id="menu_pycon_presentation"/>
     <menuitem name="presentations" parent="menu_pycon_presentation" id="menu_pycon_presentation_form" action="action_pycon_presentation_form" />
-
     <!-- room menus-->
-    <menuitem name="Rooms" parent="menu_pycon_presentation" id="menu_pycon_room_form" action="action_pycon_room_form" groups="base.group_system"/>
+    <menuitem name="Rooms" parent="menu_pycon_presentation" id="menu_pycon_room_form" action="action_pycon_room_form" />
+    <!-- Speaker menus-->
+    <menuitem name="Speakers" parent="menu_pycon_presentation" id="menu_pycon_speaker_form" action="action_pycon_speaker_form" />
+
   </data>
 </odoo>

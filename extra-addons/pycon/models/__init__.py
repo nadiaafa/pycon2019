@@ -2,3 +2,4 @@
 
 from . import rooms
 from . import presentations
+from . import speakers
