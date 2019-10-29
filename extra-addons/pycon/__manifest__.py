@@ -26,6 +26,7 @@
     'data': [
         'security/ir.model.access.csv',
         'security/pycon_security.xml',
+        'demo/demo.xml',
         'views/views.xml',
         'views/templates.xml',
     ],

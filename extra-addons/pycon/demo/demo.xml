@@ -1,30 +1,55 @@
 <odoo>
-    <data>
-        <!--  -->
-        <!--   <record id="object0" model="/mnt/extra-addons/pycon./mnt/extra-addons/pycon"> -->
-        <!--     <field name="name">Object 0</field> -->
-        <!--     <field name="value">0</field> -->
-        <!--   </record> -->
-        <!--  -->
-        <!--   <record id="object1" model="/mnt/extra-addons/pycon./mnt/extra-addons/pycon"> -->
-        <!--     <field name="name">Object 1</field> -->
-        <!--     <field name="value">10</field> -->
-        <!--   </record> -->
-        <!--  -->
-        <!--   <record id="object2" model="/mnt/extra-addons/pycon./mnt/extra-addons/pycon"> -->
-        <!--     <field name="name">Object 2</field> -->
-        <!--     <field name="value">20</field> -->
-        <!--   </record> -->
-        <!--  -->
-        <!--   <record id="object3" model="/mnt/extra-addons/pycon./mnt/extra-addons/pycon"> -->
-        <!--     <field name="name">Object 3</field> -->
-        <!--     <field name="value">30</field> -->
-        <!--   </record> -->
-        <!--  -->
-        <!--   <record id="object4" model="/mnt/extra-addons/pycon./mnt/extra-addons/pycon"> -->
-        <!--     <field name="name">Object 4</field> -->
-        <!--     <field name="value">40</field> -->
-        <!--   </record> -->
-        <!--  -->
+    <data noupdate="0">
+        <!-- Rooms -->
+        <record id="pycon_room1" model="pycon.room">
+            <field name="name">Room1</field>
+            <field name="capacity">30</field>
+        </record>
+        <record id="pycon_room2" model="pycon.room">
+            <field name="name">Room2</field>
+            <field name="capacity">40</field>
+        </record>
+        <record id="pycon_room3" model="pycon.room">
+            <field name="name">Room3</field>
+            <field name="capacity">30</field>
+        </record>
+        <record id="pycon_room4" model="pycon.room">
+            <field name="name">Room4</field>
+            <field name="capacity">38</field>
+        </record>
+
+        <!-- Speakers -->
+        <record id="pycon_speaker1" model="pycon.speaker">
+            <field name="name">Speaker1</field>
+        </record>
+        <record id="pycon_speaker2" model="pycon.speaker">
+            <field name="name">Speaker2</field>
+        </record>
+        <record id="pycon_speaker3" model="pycon.speaker">
+            <field name="name">Speaker3</field>
+        </record>
+        <record id="pycon_speaker4" model="pycon.speaker">
+            <field name="name">Speaker4</field>
+        </record>
+
+        <!-- Presentations -->
+        <record id="pycon_presentation1" model="pycon.presentation">
+            <field name="name">Getting started with Odoo</field>
+            <field name="date" eval="time.strftime('%Y-%m-%d')"/>
+            <field name="room" ref="pycon.pycon_room1"/>
+            <field name="speakers" eval="[(4, ref('pycon.pycon_speaker1')), (4, ref('pycon.pycon_speaker2')), (4, ref('pycon.pycon_speaker3'))]"/>
+        </record>
+        <record id="pycon_presentation2" model="pycon.presentation">
+            <field name="name">ElasticSearch presentation</field>
+            <field name="date" eval="time.strftime('%Y-%m-%d')"/>
+            <field name="room" ref="pycon.pycon_room1"/>
+            <field name="speakers" eval="[ (4, ref('pycon.pycon_speaker4'))]"/>
+        </record>
+        <record id="pycon_presentation3" model="pycon.presentation">
+            <field name="name">TDD</field>
+            <field name="date" eval="time.strftime('%Y-%m-%d')"/>
+            <field name="room" ref="pycon.pycon_room1"/>
+            <field name="speakers" eval="[ (4, ref('pycon.pycon_speaker1')),(4, ref('pycon.pycon_speaker4'))]"/>
+        </record>
     </data>
 </odoo>
