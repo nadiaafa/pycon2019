@@ -11,3 +11,7 @@ class PyconPresentation(models.Model):
 	room = fields.Many2one('pycon.room') 
 	speakers = fields.Many2many("pycon.speaker", string='Speakers')
 	max_attendees = fields.Integer(related='room.capacity')
+
+	_sql_constraints = [
+        ('unique_name', 'unique (name)', 'This value already exists !')
+    ]
